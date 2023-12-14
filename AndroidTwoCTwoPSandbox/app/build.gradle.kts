@@ -48,6 +48,10 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
+    implementation("co.omise:omise-android:4.13.0")
+    // required to avoid crash on Android 12 API 31
+    implementation ("androidx.work:work-runtime-ktx:2.9.0")
+
     val fragmentVersion = "1.6.2"
     implementation("androidx.fragment:fragment-ktx:$fragmentVersion")
 
